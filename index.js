@@ -8,6 +8,7 @@ const debug = require('debug')('bfx-liq-twitter-bot')
 const { WSv2 } = require('bitfinex-api-node')
 const { RESTv2 } = require('bfx-api-node-rest')
 const TweetTemplate = require('./lib/tweet_template')
+const Twitter = require('twitter')
 
 const TICKER_UPDATE_INTERVAL_MS = 60 * 1000
 
